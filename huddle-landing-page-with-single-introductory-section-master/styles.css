@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--violet);
+}
+
+button {
+    cursor: pointer;
+}
+
+/*Typography */
+.hero-content-title,
+.hero-content-register {
+    font-family: 'Poppins', sans-serif;
+    font-size: 4rem;
+    line-height: 6rem;
+    font-weight: 600;
+    color: white;
+}
+
+.hero-content-body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: white;
+}
+
+.hero-content-register a {
+    color: var(--violet);
+    text-decoration: none;
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 1200px) {
+    body {
+        background-image: url(/huddle-landing-page/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+    }
+
+    main {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
+    .content-container {
+        padding: 0 2.5rem;
+    }
+
+    .logo {
+        max-width: 40%;
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-bottom: 3.5rem;
+    }
+
+    .hero-content {
+        text-align: center;
+
+    }
+
+    .hero-content-title {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        font-size: 600;
+        margin-bottom: 2rem;
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    .hero-content-body {
+        font-size: 1.6rem;
+        line-height: 24px;
+        margin-bottom: 3rem;
+        text-align: center;
+        padding: 0 2rem;
+
+    }
+
+    .hero-content-register {
+        background-color: white;
+        border: none;
+        padding: 1rem 6rem;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+        line-height: 18px;
+        font-weight: 400;
+        margin-bottom: 4rem;
+    }
+
+    .social-logo-container {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* Desktop Layout */
+@media screen and (min-width:1280px) {
+ body{
+    background-image: url(/huddle-landing-page/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    min-height: 100vh;
+    
+}
+
+.content-container{
+    padding: 0 8rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    width: 15%;
+
+}
+
+.main-content{
+    display: flex;
+    
+    
+}
+
+.hero-image{
+    min-width: 70rem;
+}
+
+.hero-content{
+    max-width: 60rem;
+    min-height: 100%;
+    margin-top: 6rem;
+    margin-left: 6rem;
+}
+.hero-content-title{
+    margin-bottom: 2rem;
+}
+
+
+
+
+.hero-content-register {
+    background-color: white;
+    border: none;
+    padding: 1rem 6rem;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.hero-content-register:hover, .hero-content-register a:hover{
+    background-color: var(--soft-magenta);
+    color: white;
+
+}
+
+
+
+.social-logo-container{
+    align-self: flex-end;
+}
+
+}
+
+
+
