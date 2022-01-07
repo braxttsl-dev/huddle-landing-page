@@ -23,7 +23,7 @@ button {
     cursor: pointer;
 }
 
-/*Typography */
+/*Typography & General */
 .hero-content-title,
 .hero-content-register {
     font-family: 'Poppins', sans-serif;
@@ -44,6 +44,8 @@ button {
     color: var(--violet);
     text-decoration: none;
 }
+
+
 
 /* Mobile Layout */
 @media only screen and (max-width: 1200px) {
